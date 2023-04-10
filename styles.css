@@ -1,0 +1,197 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header,
+.hero,
+.footer {
+    background-color: #1f2937;
+    color: #f9faf8;
+}
+
+.header li,
+.hero p {
+    font-size: 18px;
+    color: #e5e7eb
+}
+
+h3,
+.quote p {
+    font-size: 36px;
+    color: #1f2937;
+}
+
+.btn {
+    background-color: #3882F6;
+    color: #e5e7eb;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    padding: 0 5rem;
+}
+
+.logo {
+    width: 3rem;
+}
+
+.nav-list ul {
+    display: flex;
+    gap: 2rem;
+}
+
+ul li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+ul li:hover {
+    color: rgba(236, 205, 92);
+    border-bottom: 1px dotted;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Hero */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 5rem 0;
+}
+
+.hero-left {
+    flex-basis: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero img {
+    width: 30rem;
+}
+
+/* Main */
+
+.main {
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 3rem 0;
+}
+
+.main img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    border: #1f2937 solid 5px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 200px;
+}
+
+/* Quote */
+
+.quote {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+p#citation {
+    font-style: italic;
+    font-weight: 100;
+    width: 60%;
+    margin: 0;
+}
+
+p#reference {
+    font-size: 25px;
+    font-weight: bold;
+    align-self: end;
+    margin: 0 15rem;
+}
+
+/* Sign Up */
+
+.signup {
+    background-color: #3882F6;
+    color: #e5e7eb;
+    width: 70%;
+    margin: 4rem auto;
+    padding: 3rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    border-radius: 10px;
+}
+
+.signup-text {
+    display: flex;
+    flex-direction: column;
+}
+
+h4 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.signup button {
+    border: solid #e5e7eb 2px;
+}
+
+/* Footer */
+
+.footer {
+    padding: 1.5rem;
+    text-align: center;
+}
